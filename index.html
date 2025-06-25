@@ -6,7 +6,6 @@
   <link rel="stylesheet" href="./css/style.css">
   <title>Dott. Pietro Carangelo - Medico di Medicina Generale</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; }
     header {
       background-image: url('img/carangelo.png');
       background-size: cover;
@@ -16,14 +15,10 @@
       padding: 20px;
       text-align: center;
     }
-    section { padding: 20px; max-width: 800px; margin: auto; background: white; }
-    h2 { color: #005b96; }
-    footer { background: #eee; text-align: center; padding: 10px; font-size: 0.9em; }
   </style>
 </head>
 <body>
-
-  <header>
+  <header id="top">
     <nav>
       <a href="#home">Home</a>
       <a href="#about">Chi sono</a>
@@ -60,10 +55,12 @@
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade">
         </iframe>
-
-      <p><strong>Indirizzo:</strong> Via Leone IX, 21 – int.6 (secondo piano) - 00165 Roma</p>
-      <p><strong>Telefono:</strong>☎ 06 45542610 📞 340 8976995</p>
-      <p><strong>Email:</strong> <a href="mailto:pietrocarangelo1@gmail.com">📧 pietrocarangelo1@gmail.com</a></p>
+      <p><img src="img/location_icon.svg" alt="Indirizzo" class="icon"> Via Leone IX, 21 – int.6 (secondo piano) - 00165 Roma</p>
+      <p>☎ <a href="tel:+390645542610">06 45542610</a></p>
+      <p>📞 <a href="tel:+393408976995">340 8976995</a></p>
+      <p>📧 <a href="mailto:pietrocarangelo1@gmail.com">pietrocarangelo1@gmail.com</a></p>
+      <p><img src="https://web.whatsapp.com/favicon.ico" class="icon"> <a href="https://wa.me/393408976995" target="_blank">340 8976995</a></p>
+      <p><a href="https://www.facebook.com/people/Dott-Pietro-Carangelo-Cardiologo/61564589325440/"><img src="https://facebook.com/favicon.ico" class="icon"></a></p>
     </section>
     <section id="Appuntamento">
       <h2>Orari di ricevimento</h2>
@@ -72,10 +69,10 @@
         <li>Lunedì - Mercoledì - Venerdì: 17:00 – 19:00</li>
       </ul>
     </section>
+  <a href="#top" class="scroll-top" title="Torna su">⬆</a>
   </main>
   <footer>
     &copy; 2025 Studio Medico Carangelo. Tutti i diritti riservati.
   </footer>
-
 </body>
 </html>
