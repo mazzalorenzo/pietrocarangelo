@@ -1,7 +1,7 @@
     body {
         font-family: Arial, sans-serif;
         margin: 0;
-        padding: 0;
+        padding: 60px 0 0 0;
         background: #f4f4f4;
     }
 
@@ -30,29 +30,47 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
       padding: 10px 20px;
     }
 
     nav a {
-      color: white;
-      padding: 14px 16px;
+      color: black;
+      padding: 14px 5%;
       text-decoration: none;
       text-transform: uppercase;
+      text-align: center;
+      font-weight: bold;
+      width: 20%;
     }
 
     nav a:hover {
-      background-color: #003f6a;
+      background-color: #f4f4f4;
     }
 
-    .navbar-logo {
-      font-size: 1.2em;
-      font-weight: bold;
+    @media screen and (max-width: 600px) {
+      nav a .icon {
+        display: inline;
+      }
+      nav a .text {
+        display: none;
+      }
     }
 
-    .navbar-links {
-      display: flex;
-      gap: 10px;
+    @media screen and (min-width: 600px) {
+      nav a .icon {
+        display: none;
+      }
+      nav a .text {
+        display: inline;
+      }
     }
+
+
 
     .icon {
         height: 1em;
