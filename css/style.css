@@ -131,6 +131,18 @@
   border-radius: 15px;
 }
 
+.image-card p {
+  position: absolute;
+  width: 100%;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: green;
+  background-color: #ffffffc0;
+  border: none;
+  border-radius: 5px;
+}
+
 .image-card button {
   position: absolute;
   width: 50%;
