@@ -134,7 +134,7 @@
 .image-card h3 {
   position: absolute;
   width: 100%;
-  top: 20px;
+  top: 0px;
   left: 50%;
   transform: translateX(-50%);
   color: green;
