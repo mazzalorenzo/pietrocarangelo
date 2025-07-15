@@ -1,92 +1,92 @@
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 60px 0 0 0;
-        background: #f4f4f4;
-    }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 60px 0 0 0;
+    background: #f4f4f4;
+}
 
-    section {
-        padding: 20px;
-        max-width: 100%;
-        margin: auto;
-        background: white;
-    }
+section {
+    padding: 20px;
+    max-width: 100%;
+    margin: auto;
+    background: white;
+}
 
-    #top h1 {
-      font-size: clamp(1.8rem, 8vw, 5rem);
-      font-family: sans-serif;
-    }
+#top h1 {
+  font-size: clamp(1.8rem, 8vw, 5rem);
+  font-family: sans-serif;
+}
 
-    #top p {
-      font-size: clamp(1.2rem, 3vw, 2rem);
-      font-family: serif;
-    }
+#top p {
+  font-size: clamp(1.2rem, 3vw, 2rem);
+  font-family: serif;
+}
 
-    h2 {
-        color: #005b96;
-        font-size: 2rem;
-    }
+h2 {
+    color: #005b96;
+    font-size: 2rem;
+}
 
-    footer {
-        background: #eee;
-        text-align: center;
-        padding: 10px;
-        font-size: 0.9em;
-    }
-
-
-    nav {
-      /* background-color: #005b96; */
-      overflow: hidden;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background-color: white;
-      padding: 10px 0px;
-    }
-
-    nav a {
-      color: black;
-      padding: 14px 5%;
-      text-decoration: none;
-      text-transform: uppercase;
-      text-align: center;
-      font-weight: bold;
-      width: 20%;
-    }
-
-    nav a:hover {
-      background-color: #f4f4f4;
-    }
-
-    @media screen and (max-width: 600px) {
-      nav a .icon {
-        display: inline;
-      }
-      nav a .text {
-        display: none;
-      }
-    }
-
-    @media screen and (min-width: 600px) {
-      nav a .icon {
-        display: none;
-      }
-      nav a .text {
-        display: inline;
-      }
-    }
+footer {
+    background: #eee;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em;
+}
 
 
+nav {
+  /* background-color: #005b96; */
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  padding: 10px 0px;
+}
 
-    .icon {
-        height: 1em;
-        vertical-align: middle;
-    }
+nav a {
+  color: black;
+  padding: 14px 5%;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  width: 20%;
+}
+
+nav a:hover {
+  background-color: #f4f4f4;
+}
+
+@media screen and (max-width: 600px) {
+  nav a .icon {
+    display: inline;
+  }
+  nav a .text {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  nav a .icon {
+    display: none;
+  }
+  nav a .text {
+    display: inline;
+  }
+}
+
+
+
+.icon {
+    height: 1em;
+    vertical-align: middle;
+}
 
 .scroll-top {
   position: fixed;
@@ -122,32 +122,35 @@
   display: inline-block;
   text-align: center;
   width: clamp(300px,20vw,100%);
+  background-color: lightgrey;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   border-radius: 15px;
-
+  container-name: service-card;
+  container-type: inline-size;
 }
 
-    @media screen and (max-width: 600px) {
-      .service-card {
-        width: 100%;
-      }
-    }
+@media screen and (max-width: 600px) {
+  .service-card {
+    width: 100%;
+  }
+}
 
-    @media screen and (min-width: 600px) {
-      .service-card {
-        width: 40vw;
-      }
-    }
+@media screen and (min-width: 600px) {
+  .service-card {
+    width: 40vw;
+  }
+}
 
 
 /* On mouse-over, add a deeper shadow */
 .service-card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  background-color: grey;
 }
 
 .service-card img {
-  width: 100%;
+  width: 90%;
   height: 200px;
   object-fit: cover;
   border-radius: 15px;
@@ -155,9 +158,9 @@
 
 .service-card h3 {
   text-align: center;
+  font-size: clamp(0.5rem,5cqw,5rem);
   width: 100%;
   color: green;
-  background-color: #ffffffc0;
   border: none;
   border-radius: 15px;
 }
